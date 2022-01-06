@@ -4,10 +4,11 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/cloudfoundry-samples/test-app/helpers"
+	"github.com/gorkemozlu/test-app/helpers"
 )
 
 type Index struct {
+	Index string
 }
 
 func (_ *Index) ServeHTTP(w http.ResponseWriter, r *http.Request) {
